@@ -13,4 +13,4 @@ cd /project/devs/test/
 module load python/3.7.2
 python FindTelomeres.py APSI_v2.hap1_masked.fasta
 
-##Task2 Write PBS script
+## Task2 Write PBS script
