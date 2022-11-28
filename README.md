@@ -1,3 +1,3 @@
-# Projectpart 1
+# Project part 1
 
 Bioinformatics!
