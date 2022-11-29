@@ -13,7 +13,7 @@ cd /project/devs/test/
 module load python/3.7.2
 python FindTelomeres.py APSI_v2.hap1_masked.fasta
 
-## Task 2 Write PBS script reference quast script
+## Task 2 Write PBS script from reference quast script
 
 exit
 cd /project/devs/
@@ -36,4 +36,30 @@ cd $PBS_O_WORKDIR
 python FindTelomeres.py APSI_v2.hap1_masked.fasta > output1.txt
 
 module unload python/3.7.2
+
+## Task 3 Running the written PBS script on hpc
+1. Transferring file from local computer to remote computer using command line
+Setup a command line sftp sesssion first
+
+sftp>
+sftp> lls
+sftp> lcd Documents
+sftp>
+
+
+
+2.
+[mgil5952@login4 ~]$                        (in hpc ls not in project directory)
+cp script.rtf /project/devs/test    
+cd /project/devs
+cd  test
+ls
+mv script.rtf script.pbs
+
+
+
+
+
+
+
 
