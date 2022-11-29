@@ -49,7 +49,7 @@ sftp>
 
 
 2.
-[mgil5952@login4 ~]$                        (in hpc ls not in project directory)
+[user@login4 ~]$                        (user-in hpc ls not in project directory)
 cp script.rtf /project/devs/test    
 cd /project/devs
 cd  test
