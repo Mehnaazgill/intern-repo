@@ -56,6 +56,9 @@ cd  test
 ls
 mv script.rtf script.pbs
 
+# Task 4 and 5 Practtice bash, bash script and vim
+
+
 
 
 
