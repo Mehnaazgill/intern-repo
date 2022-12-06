@@ -58,7 +58,8 @@ mv script.rtf script.pbs
 
 ## Task 4  Practice bash, bash script and vim
 
-##Task 5 Following computational genomics Protocol
+## Task 5 Following computational genomics Protocol
+
 reference:https://genomics.sschmeier.com/ngs-annotation/index.html
 
 1.Installing and setting up Miniconda 3on local computer using command line interface
