@@ -62,7 +62,34 @@ mv script.rtf script.pbs
 
 reference:https://genomics.sschmeier.com/ngs-annotation/index.html
 
-1.Installing and setting up Miniconda 3on local computer using command line interface
+1. Installing and setting up Miniconda3 on local computer using command line interface
+conda update --yes conda                    (yes )
+conda config --add channels defaults
+conda config --add channels bioconda
+conda config --add channels conda-forge
+conda create -n ngs python=3                (setting up environmet)
+
+2.
+## Running fastp for adapter trimming steps
+conda create --yes -n qc fastp fastqc multiqc
+conda activate qc     (activating conda qc for fastp)
+mkdir trimmed
+ls  
+cp *fastq.gz trimmed                            
+ls trimmed
+cd trimmed
+fastp --detect_adapter_for_pe --overrepresentation_analysis --correction --cut_right --html /Users/mg/Desktop/analysis/data/trimmed/evol2.fastp.html --json /Users/mg/Desktop/analysis/data/trimmed/evol2.fastp.json --thread 2 -i /Users/mg/Desktop/analysis/data/evol2_R1.fastq.gz -I /Users/mg/Desktop/analysis/data/evol2_R2.fastq.gz -o /Users/mg/Desktop/analysis/data/trimmed/evol2_R1.fastq.gz -O /Users/mg/Desktop/analysis/data/trimmed/evol2_R2.fastq.gz
+
+ls trimmed
+cp trimmed/evol2.fastp.html /Users/mg/Desktop/internship/             (for opening html file in a browser)
+
+fastp --detect_adapter_for_pe --overrepresentation_analysis --correction --cut_right --html /Users/mg/Desktop/analysis/data/trimmed/evol1.fastp.html --json /Users/mg/Desktop/analysis/data/trimmed/evol1.fastp.json --thread 2 -i /Users/mg/Desktop/analysis/data/evol1_R1.fastq.gz -I /Users/mg/Desktop/analysis/data/evol1_R2.fastq.gz -o /Users/mg/Desktop/analysis/data/trimmed/evol1_R1.fastq.gz -O /Users/mg/Desktop/analysis/data/trimmed/evol1_R2.fastq.gz
+ls trimmed
+cp trimmed/evol1.fastp.html /Users/mg/Desktop/internship/
+conda deactivate
+
+
+
 
 
 
