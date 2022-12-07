@@ -72,7 +72,7 @@ conda create -n ngs python=3                (setting up environmet)
 2.
 ## Running fastp for adapter trimming steps
 conda create --yes -n qc fastp fastqc multiqc
-conda activate qc     (activating conda qc for fastp)
+conda activate qc                           (activating conda qc environmentfor running fastp)
 mkdir trimmed
 ls  
 cp *fastq.gz trimmed                            
