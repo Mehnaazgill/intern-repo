@@ -88,6 +88,22 @@ ls trimmed
 cp trimmed/evol1.fastp.html /Users/mg/Desktop/internship/
 conda deactivate
 
+## Task 6 Running Fastqc and Multiqc for quality assesment
+1. Running fastqc
+
+fastqc -o /Users/mg/Desktop/  evol1_R1.fastq.gz
+fastqc -o /Users/mg/Desktop/  evol1_R2.fastq.gz
+fastqc -o /Users/mg/Desktop/  evol2_R1.fastq.gz
+fastqc -o /Users/mg/Desktop/ evol2_R2.fastq.gz
+mkdir multiqc                                        (create a new directory multiqc inside data directory)
+cp *fastqc.html /Users/mg/Desktop/analysis/data/multiqc   (because outputwas printern on desktop; so pwd was desktop and transferred to multiqc in data )
+
+ 2. Generating multi qc report
+  (make sure all fastqc. and fastp files including in json format are in same directory so as to generate multiqc report in .html)
+ multiqc /Users/mg/Desktop/analysis/data/multiqc/
+
+
+
 
 
 
