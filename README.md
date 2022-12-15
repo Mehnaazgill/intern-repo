@@ -101,6 +101,10 @@ cp *fastqc.html /Users/mg/Desktop/analysis/data/multiqc   (because outputwas pri
  2. Generating multi qc report
   (make sure all fastqc. and fastp files including in json format are in same directory so as to generate multiqc report in .html)
  multiqc /Users/mg/Desktop/analysis/data/multiqc/
+## Task 7 Running SPAdes
+## Task 8 Solving BUG in script  and  running QUAST
+## Task 9 Alignment using BWA to map reads
+## Task 10 Variant calling
 
 
 
